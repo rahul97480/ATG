@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ATGController;
+use App\Http\Controllers\WebServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +16,4 @@ use App\Http\Controllers\ATGController;
 
 
 Route::view('/','form');
-Route::post('/submit',[ATGController::class,'store']);
-Route::view('index','index');
+Route::post('/submit',[WebServicesController::class,'apiResponse']);
